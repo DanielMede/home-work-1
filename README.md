@@ -40,3 +40,11 @@ Slutresultat/Analys/Diskussion
 - Buggar
 - Förbättringar
 - Övrigt
+
+Log
+---
+
+-2014-10-17
+ Fixa så att klasslista fungerar och börja att sätt in de nya funktioner i det
+ nya projektet. Inga problem så här länge. Nästa gång ska jag fixa in saker som
+ kan behövas.

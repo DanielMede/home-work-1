@@ -1,4 +1,4 @@
-public Interfaceclass{
+public interface Interfaceclass{
 
 
-{
+}
