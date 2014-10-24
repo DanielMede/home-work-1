@@ -6,21 +6,37 @@ import java.util.ArrayList;
  * @author 96danmed
  */
 public class KlassModel {
-    private ArrayList<Abstractclass> persons;
+    private ArrayList<Abstractclass> Teachers;
+    private ArrayList<Abstractclass> Students;
     
     public KlassModel(){
-        persons = new ArrayList<>();
+        Teachers = new ArrayList<>();
         
     }
     
-    public void addPerson( Abstractclass p ){
-    persons.add( p );
+    public void addStudents( Abstractclass p ){
+    Students.add( p );
     
     }
-    public String printClass(){
+    public String printStudents(){
         String str = "";
-        for(int i = 0; i < persons.size(); i++){
-            str += persons.get(i).toString() + "\n";
+        for(int i = 0; i < Students.size(); i++){
+            str += Students.get(i).toString() + "\n";
+            
+        }
+        
+        return str;
+        
+    }
+    
+    public void addTeacher( Abstractclass p ){
+    Teachers.add( p );
+    
+    }
+    public String printTeachers(){
+        String str = "";
+        for(int i = 0; i < Teachers.size(); i++){
+            str += Teachers.get(i).toString() + "\n";
             
         }
         

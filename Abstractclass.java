@@ -2,7 +2,7 @@
 
 
 /**
- *Personklassen beskriver ett person-objekt med tillhörande variabler.
+ *Abstractklassen beskriver ett person-objekt med tillhörande variabler.
  * @author 96danmed
  * @version 0.1
  */

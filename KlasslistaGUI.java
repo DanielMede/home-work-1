@@ -33,8 +33,9 @@ public class KlasslistaGUI extends JFrame{
     private JTabbedPane jtp;
     private JPanel pteacher, pstudent, pclass;
     private JTextField txfTeacher, txfStudent;
-    private JTextArea txaClass;
-    private JButton btnAddTeacher, btnAddStudent, btnPrintClass;
+    private JTextArea txaStudents;
+    private JTextArea txaTeachers;
+    private JButton btnAddTeacher, btnAddStudent, btnPrintStudents, btnPrintTeachers;
     private JLabel lblTeacher, lblStudent, lblPrint;
     
     /*
@@ -74,7 +75,7 @@ public class KlasslistaGUI extends JFrame{
                 System.exit(0);
             }
         });
-        this.menu = new JMenuBar();
+        
         this.about = new JMenu("Om");
         this.om = new JMenuItem("Om");
         
@@ -108,7 +109,7 @@ public class KlasslistaGUI extends JFrame{
         this.btnAddTeacher.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e){
-                classModel.addPerson(new Subclass2(txfTeacher.getText()));
+                classModel.addTeacher(new Subclass2(txfTeacher.getText()));
                 txfTeacher.setText("");
             }
         });
@@ -130,7 +131,7 @@ public class KlasslistaGUI extends JFrame{
         this.btnAddStudent.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e){
-                classModel.addPerson(new Subclass1(txfStudent.getText()));
+                classModel.addStudents(new Subclass1(txfStudent.getText()));
                 txfStudent.setText("");
             }
         });
@@ -145,22 +146,40 @@ public class KlasslistaGUI extends JFrame{
         
         this.pclass.setLayout( new BorderLayout(10, 10));
         this.lblPrint = new JLabel("Print class");
-        this.txaClass = new JTextArea(10, 25);
-        this.txaClass.setEditable(false);
+        this.txaStudents = new JTextArea(10, 25);
+        this.txaStudents.setEditable(false);
         
-        this.btnPrintClass = new JButton("Print");
-        this.btnPrintClass.setPreferredSize(dimButton);
-        this.btnPrintClass.addActionListener(new ActionListener() {
+        this.btnPrintStudents = new JButton("Print students");
+        this.btnPrintStudents.setPreferredSize(dimButton);
+        this.btnPrintStudents.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e){
-                String str = classModel.printClass();
-                txaClass.setText(str);
+                String str = classModel.printStudents();
+                txaStudents.setText(str);
+                
+            }
+        });
+        this.txaTeachers = new JTextArea(10, 25);
+        this.txaTeachers.setEditable(false);
+        
+        this.btnPrintTeachers = new JButton("Print teachers");
+        this.btnPrintTeachers.setPreferredSize(dimButton);
+        this.btnPrintTeachers.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e){
+                String str = classModel.printTeachers();
+                txaTeachers.setText(str);
                 
             }
         });
         this.pclass.add(this.lblPrint, BorderLayout.NORTH);
-        this.pclass.add(this.txaClass, BorderLayout.CENTER);
-        this.pclass.add(this.btnPrintClass, BorderLayout.SOUTH);
+        this.pclass.add(this.txaStudents, BorderLayout.WEST);
+        this.pclass.add(this.txaTeachers, BorderLayout.WEST);
+        this.pclass.add(this.btnPrintTeachers, BorderLayout.SOUTH);
+        this.pclass.add(this.btnPrintStudents, BorderLayout.SOUTH);
+        
+        
+        
         
     }
     
