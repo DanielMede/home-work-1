@@ -1,7 +1,9 @@
 
 
 public class Subclass2 extends Abstractclass{
-    
+    /*
+     * Teacher klassen
+     */
     protected String[] classes;
     protected int nbrOfClasses;
     

@@ -6,22 +6,22 @@ import java.util.ArrayList;
  * @author 96danmed
  */
 public class KlassModel {
-    private ArrayList<Abstractclass> Teachers;
-    private ArrayList<Abstractclass> Students;
+    private ArrayList<Abstractclass> teachers;
+    private ArrayList<Abstractclass> students;
     
     public KlassModel(){
-        Teachers = new ArrayList<>();
-        
+        teachers = new ArrayList<>();
+        students = new ArrayList<>();
     }
     
     public void addStudents( Abstractclass p ){
-    Students.add( p );
+        students.add( p );
     
     }
     public String printStudents(){
         String str = "";
-        for(int i = 0; i < Students.size(); i++){
-            str += Students.get(i).toString() + "\n";
+        for(int i = 0; i < students.size(); i++){
+            str += students.get(i).toString() + "\n";
             
         }
         
@@ -30,13 +30,13 @@ public class KlassModel {
     }
     
     public void addTeacher( Abstractclass p ){
-    Teachers.add( p );
+    teachers.add( p );
     
     }
     public String printTeachers(){
         String str = "";
-        for(int i = 0; i < Teachers.size(); i++){
-            str += Teachers.get(i).toString() + "\n";
+        for(int i = 0; i < teachers.size(); i++){
+            str += teachers.get(i).toString() + "\n";
             
         }
         

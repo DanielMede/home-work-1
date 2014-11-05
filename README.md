@@ -48,3 +48,9 @@ Log
  Fixat så att klasslista fungerar och börja att sätt in de nya funktioner i det
  nya projektet. Inga problem så här länge. Nästa gång ska jag fixa in saker som
  kan behövas.
+
+
+-2014-11-05
+    Fixat till knapparna så att man kan lägga till både Lärare och Elever
+    och fixat några problem som har uppkommit med det. Nästa gång ska jag lägga 
+    in så det kan läggas betyg.

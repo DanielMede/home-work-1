@@ -98,7 +98,7 @@ public class KlasslistaGUI extends JFrame{
         this.jtp.addTab("Class", pclass);
         
         /*
-         * Teahcer-fliken Flow Layuot Manager
+         * Teacher-fliken Flow Layuot Manager
          */
         this.lblTeacher = new JLabel("Teacher to add");
         this.txfTeacher = new JTextField();
@@ -139,7 +139,7 @@ public class KlasslistaGUI extends JFrame{
         this.pstudent.add(this.lblStudent);
         this.pstudent.add(this.txfStudent);
         this.pstudent.add(this.btnAddStudent);
-        
+         
         /*
          * Klass-fliken BorderLayout
          */
@@ -174,9 +174,9 @@ public class KlasslistaGUI extends JFrame{
         });
         this.pclass.add(this.lblPrint, BorderLayout.NORTH);
         this.pclass.add(this.txaStudents, BorderLayout.WEST);
-        this.pclass.add(this.txaTeachers, BorderLayout.WEST);
+        this.pclass.add(this.txaTeachers, BorderLayout.EAST);
         this.pclass.add(this.btnPrintTeachers, BorderLayout.SOUTH);
-        this.pclass.add(this.btnPrintStudents, BorderLayout.SOUTH);
+        this.pclass.add(this.btnPrintStudents, BorderLayout.NORTH);
         
         
         

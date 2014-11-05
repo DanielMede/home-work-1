@@ -1,6 +1,8 @@
 
 public class Subclass1 extends Abstractclass{
-    
+    /*
+     * Student klass
+     */
     protected String[] grades;
     
     
