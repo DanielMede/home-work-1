@@ -9,6 +9,7 @@ public class KlassModel {
     private ArrayList<Abstractclass> teachers;
     private ArrayList<Abstractclass> students;
     
+    
     public KlassModel(){
         teachers = new ArrayList<>();
         students = new ArrayList<>();
@@ -16,7 +17,8 @@ public class KlassModel {
     
     public void addStudents( Abstractclass p ){
         students.add( p );
-    
+        
+        
     }
     public String printStudents(){
         String str = "";

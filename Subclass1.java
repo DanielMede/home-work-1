@@ -15,6 +15,6 @@ public class Subclass1 extends Abstractclass{
     
     @Override
     public String toString(){
-    return"Student: " + name;
+    return"Student: " + name + "Betyg" + grades;
     }
 }

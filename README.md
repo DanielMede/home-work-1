@@ -54,3 +54,7 @@ Log
     Fixat till knapparna så att man kan lägga till både Lärare och Elever
     och fixat några problem som har uppkommit med det. Nästa gång ska jag lägga 
     in så det kan läggas betyg.
+-2014-11-12
+    Håller på att sätta in betyg har fixat textrutan men knappen vet jag inte hur 
+    jag ska lägga in. Till nästa gång så ska jag fixa så att knappen fungerar
+    att sätta in betyg.

@@ -32,11 +32,12 @@ public class KlasslistaGUI extends JFrame{
     
     private JTabbedPane jtp;
     private JPanel pteacher, pstudent, pclass;
-    private JTextField txfTeacher, txfStudent;
+    private JTextField txfTeacher, txfStudent, txfGrades;
     private JTextArea txaStudents;
     private JTextArea txaTeachers;
-    private JButton btnAddTeacher, btnAddStudent, btnPrintStudents, btnPrintTeachers;
-    private JLabel lblTeacher, lblStudent, lblPrint;
+    private JButton btnAddTeacher, btnAddStudent, btnPrintStudents, btnPrintTeachers, btnAddGrades;
+    private JLabel lblTeacher, lblStudent, lblPrint, lblGrades;
+    
     
     /*
      * Modell variabler
@@ -139,7 +140,30 @@ public class KlasslistaGUI extends JFrame{
         this.pstudent.add(this.lblStudent);
         this.pstudent.add(this.txfStudent);
         this.pstudent.add(this.btnAddStudent);
-         
+        
+        
+        /*
+         * Betyg
+         */
+        
+        this.lblGrades = new JLabel("Add grades");
+        this.txfGrades = new JTextField();
+        this.txfGrades.setPreferredSize(dimTXF);
+        
+        this.btnAddGrades = new JButton("Add grades");
+        this.btnAddGrades.setPreferredSize(dimButton);
+        this.btnAddGrades.addActionListener(new ActionListener(){
+        @Override
+            public void actionPerformed(ActionEvent e) {
+                classModel.
+        }
+        });
+        
+        
+        this.pstudent.add(this.lblGrades);
+        this.pstudent.add(this.txfGrades);
+        this.pstudent.add(this.btnAddGrades);
+        
         /*
          * Klass-fliken BorderLayout
          */
