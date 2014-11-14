@@ -3,7 +3,7 @@ public class Subclass1 extends Abstractclass{
     /*
      * Student klass
      */
-    protected String[] grades;
+    String[] grades;
     
     
     public Subclass1( String name){
@@ -13,6 +13,10 @@ public class Subclass1 extends Abstractclass{
     
     }
     
+    public void addGrades(String grades){
+        
+        
+    }
     @Override
     public String toString(){
     return"Student: " + name + "Betyg" + grades;

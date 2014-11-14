@@ -57,4 +57,7 @@ Log
 -2014-11-12
     Håller på att sätta in betyg har fixat textrutan men knappen vet jag inte hur 
     jag ska lägga in. Till nästa gång så ska jag fixa så att knappen fungerar
-    att sätta in betyg.
+    att sätta in betyg. 
+-2014-11-14
+    Börjat med betygen finns några problem med hur det ska skrivas som jag
+    måste fixa. 
